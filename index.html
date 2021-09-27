@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Amit Patil</title>
@@ -24,6 +24,31 @@
 	   margin-right:5%;
 	}
 	</style>
+		<script>
+
+    var divs = ["App1", "App2"];
+    var visibleDivId = null;
+    function toggleVisibility(divId) {
+      if(visibleDivId === divId) {
+        visibleDivId = null;
+      } else {
+        visibleDivId = divId;
+      }
+      hideNonVisibleDivs();
+    }
+    function hideNonVisibleDivs() {
+      var i, divId, div;
+      for(i = 0; i < divs.length; i++) {
+        divId = divs[i];
+        div = document.getElementById(divId);
+        if(visibleDivId === divId) {
+          div.style.display = "block";
+        } else {
+          div.style.display = "none";
+        }
+      }
+    }
+</script>
 </head>
 <body style="background-color:black;">
     <nav >
@@ -159,8 +184,15 @@
             </div>
         </section>
 		<hr class="new4">
-		<div class="slideanim">
-		<div style="margin-top:5%;margin-right:5%" class="card-columns">
+		
+		 <h2 style="text-align:center; margin-top:3%;" class="text-warning">My Works</h2>
+		 <div style="text-align:center; margin-bottom:3%;">
+		 <button type="button" id="btn" class="btn btn-outline-success" onclick="toggleVisibility('App1');">Android Projects</button>
+			<button type="button" class="btn btn-outline-info" onclick="toggleVisibility('App2')">Flutter-OpenSource</button>
+			</div>
+<section class="slideanim">	
+<div id="App1">	 
+		<div style="margin-right:5%" class="card-columns" >
 		  <div style="background-color:black" class="card border-danger mb-3">
 			<img style="width:30%; margin-top:2%;text-align:center;" src="imgs/iconfinal.png" class="card-img-top" alt="...">
 			<div class="card-body">
@@ -169,22 +201,24 @@
 		This app provides all the theory question papers (SPPU B.E. Engineering) from F.E to B.E.
 		Also, provides Online MCQ Test Practise for F.E and S.E. students.</p>
 		<a href="https://play.google.com/store/apps/details?id=com.unveil.sppuqbank&hl=en_IN" class="btn btn-danger">View Project</a>
-					</div>
+			</div>
 		  </div>
 		   <div style="background-color:black" class="card border-warning mb-3">
 			<img style="width:65%; margin-top:2%;text-align:center;" src="imgs/shop.jpg" class="card-img-top" alt="...">
+	
 			<div class="card-body">
 			  <h5 class="text-warning">MobileShopping-Application</h5>
 			  <p class="text-white">Jan 2018 – Mar 2018
 
 Project descriptionThis is app for Mobile shopping , which help you for purches mobile and its assesories in best price .
 Its help buyer to compare many other websites with there best deals</p>
-<a href="https://github.com/patilamit1999/MobileShpping-Application" class="btn btn-warning">View Project</a>
-		
+		<a href="https://github.com/patilamit1999/MobileShpping-Application" class="btn btn-warning">View Project</a>
 			</div>
+		
 		  </div>
 		   <div style="background-color:black;margin-right:5%" class="card border-info mb-3">
 			<img style="width:53%; margin-top:2%;text-align:center;" src="imgs/test.jpg" class="card-img-top" alt="...">
+			
 			<div class="card-body">
 			  <h5 class="text-info">OnlineTest-Application</h5>
 			  <p class="text-white">Jan 2019 – Mar 2019
@@ -193,25 +227,74 @@ Its help buyer to compare many other websites with there best deals</p>
 					and this module is also implement in prerequisite test and aptitude test.</p>
 		<a href="https://github.com/patilamit1999/OnlineTest-Application" class="btn btn-info">View Project</a>
 			</div>
+			
 		  </div>
-		  
 		</div>
-		</div>
-		<div class="slideanim">
-		<div style="margin-top:1%;margin-right:5%" class="card-columns">
-		  <div style="background-color:black" class="card border-success mb-3">
-			<img style="width:70%; margin-top:2%;text-align:center;" src="imgs/nmu.png" class="card-img-top" alt="...">
+    
+	<div style="margin-top:1%;margin-right:5%" class="card-columns" >
+		
+		  <div style="background-color:black;margin-right:5%" class="card border-danger mb-3">
+			<img style="width:53%; margin-top:2%;text-align:center;" src="imgs/class.png" class="card-img-top" alt="...">
+			
 			<div class="card-body">
-			  <h5 class="text-success">NMU Classroom</h5>
-			  <p class="text-white">THIS APPLICATION IS PROVIDING PLATFORM FOR SHAREING ALL TYPES OF FILE AND VIDEO LECTURE URL,
-			  FACULTIES AND STUDENDS BOTH CAN SHARE NOTES AND DOCUMENT FILE ,IT IS SEPARATE FOR EACH BRANCH AND SUBJECT HANCE IT IS TO GOING EASY FOR ALL TO REFER NOTES.</p>
-			  <a href="https://github.com/patilamit1999/NMU-Classroom" class="btn btn-success">View Project</a>
-					</div>
-					
+			  <h5 style="color:Chocolate;">NMU-Classroom</h5>
+			  <p class="text-white">
+					This application for online tutorial or any type of study material provided .
+					Students can reffer that study material any time. it is very tedius job for searching notes for perticular subject 
+					and visit diffrent websites . in this application all notes are available as per subject and branch wise.</p>
+		<a href="https://github.com/patilamit1999/OnlineTest-Application" class="btn btn-danger">View Project</a>
+			</div>
+			
 		  </div>
-		  
-    </div>
-	</div>
+		  <div style="background-color:black;margin-right:5%" class="card border-warning mb-3">
+			<img style="width:53%; margin-top:2%;text-align:center;" src="imgs/Flash.png" class="card-img-top" alt="...">
+			
+			<div class="card-body">
+			  <h5 style="color:Chocolate;">Flash-Classroom</h5>
+			  <p class="text-white">
+					This application Flash classrooms is absolutely free service which provides video conferencing, virtual classrooms ,
+					assignments submission, mock tests and much more.</p>
+		<a href="https://play.google.com/store/apps/details?id=com.unveils.mobilelearning" class="btn btn-warning">View Project</a>
+			</div>
+			
+		  </div>
+		 </div>
+		 
+		 </div>
+		 <div style="margin-top:1%;margin-right:5%" class="card-columns" id="App2">
+		  <div style="background-color:black" class="card border-primary mb-3">
+			<img style="width:60%; margin-top:2%;text-align:center;" src="imgs/animated.gif" class="card-img-top" alt="...">
+			<div class="card-body">
+			  <h5 class="text-primary">Flutter-Material_AlertDialog</h5>
+			  <p class="text-white"> Flutter package  to implement *animated*, 🥰 *Attractive*, 🎨*stylish* Material Dialog in Flutter easily..</p>
+		<a href="https://github.com/patilamit1999/Flutter-MaterialAlertDialog" class="btn btn-primary">View Project</a>
+			</div>
+		
+		  </div>
+		   <div style="background-color:black" class="card border-success mb-3">
+			<img style="width:50%; height:30%; margin-top:2%;text-align:center;" src="imgs/healthcare.gif" class="card-img-top" alt="...">
+			
+			<div class="card-body">
+			  <h5 class="text-success">Flutter-FirebasePhoneAuth</h5>
+			  <p class="text-white">Flutter package to Easy Implimaintaion of Firebase Phone Authentication and also provide *animated*, 🥰 *Attractive*, 🎨*stylish* Login Page for phone authentication.</p>
+		<a href="https://github.com/patilamit1999/Flutter-FirebasePhoneAuth" class="btn btn-success">View Project</a>
+			</div>
+		
+		  </div>
+		  <div style="background-color:black;margin-right:5%" class="card border-danger mb-3">
+			<img style="width:53%; margin-top:2%;text-align:center;" src="imgs/main.jpg" class="card-img-top" alt="...">
+			
+			<div class="card-body">
+			  <h5 style="color:Chocolate;">Flutter-Card_gridView</h5>
+			  <p class="text-white">
+					Flutter package for easy implimentation of card lauout and also provide it a grid view and build interactive ui with material card view.</p>
+		<a href="https://github.com/patilamit1999/custom_cardgridview" class="btn btn-danger">View Project</a>
+			</div>
+			
+		  </div>
+		 </div>
+		 </section>
+		 </div>
 
 
     <footer class="text-center">
