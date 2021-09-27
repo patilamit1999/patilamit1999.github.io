@@ -1,0 +1,304 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Amit Patil</title>
+    <meta name="viewport" content="width=1024">
+    <script src="js/float-panel.js"></script>
+	<script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="CSS/demo2.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="CSS/profile.css">
+	<style>
+	#image1 {background-image: url("img/face.png");}
+	hr.new4 {
+	  border: 1px solid yellow;
+	  margin-left:5%;
+	  margin-right:5%;
+	  margin-top:5%;
+	  
+	}
+	hr.new3 {
+	  border: 1px solid red;
+	  margin-top:3%;
+	   margin-right:5%;
+	}
+	</style>
+		<script>
+
+    var divs = ["App1", "App2"];
+    var visibleDivId = null;
+    function toggleVisibility(divId) {
+      if(visibleDivId === divId) {
+        visibleDivId = null;
+      } else {
+        visibleDivId = divId;
+      }
+      hideNonVisibleDivs();
+    }
+    function hideNonVisibleDivs() {
+      var i, divId, div;
+      for(i = 0; i < divs.length; i++) {
+        divId = divs[i];
+        div = document.getElementById(divId);
+        if(visibleDivId === divId) {
+          div.style.display = "block";
+        } else {
+          div.style.display = "none";
+        }
+      }
+    }
+</script>
+</head>
+<body style="background-color:black;">
+    <nav >
+        <div class="float-panel" data-top="0" data-scroll="300">
+            <div style="text-align:right;max-width:1360px;margin:0 auto;">
+                <div style="float:left;">
+                    <img src="imgs/ami.jpg" width="30" height="30" class="d-inline-block align-top" alt="" style= "border-radius: 50%; ">
+                    <em style="color:white; font:20px Verdana, Arial;letter-spacing:2px; margin-top:2%;">Amit Patil</em>
+                </div>
+                <a href="#"style="color:white">Skill</a>
+                <a href="#"style="color:white">About us</a>
+                <a href="#"style="color:white">Contact</a>
+               
+            </div>
+        </div>
+    </nav>
+	<section class="slideanim">
+    <img src="imgs/amit.jpg" alt="" style="border-radius: 50%; width:18%;display: block; margin-left: auto;margin-top :3%; margin-right: auto;">
+	<h1 class="text-warning" style = " text-align:center ; margin-top:2%">Amit Patil</h1>
+	<p id="demo" class="text-info"></p>
+	<button  style="display: block; margin-left: auto;margin-top :3%; margin-right: auto;" type="button" class="btn btn-outline-warning"><a href="files/AmitPatil.pdf" class="button"><i class="fa fa-download"></i>Resume</a></button>
+	<div  style="text-align:center; display: block; margin-left: auto; margin-top :3%; margin-right: auto;">
+	<a href="https://www.linkedin.com/in/amit-patil-6b636b1a5/">
+	<img class="pic" src="imgs/link.png" width="50" height="50"  alt="" >    
+	</a>   
+	<a href="https://github.com/patilamit1999">  
+	<img class="pic" src="imgs/git.png" width="50" height="50"  alt="" style="margin-left:2%">  
+	</a>
+	<a href="https://www.facebook.com/profile.php?id=100010793081810">  
+	<img class="pic" src="imgs/face.png" width="50" height="50"  alt="" style="margin-left:2% ; border-radius: 22%;">   
+	</a>     
+	</div>	
+	<hr class="new4">
+	</section>
+	
+
+
+	
+	
+    <div id="wrapper">
+	
+        <section class="row" style="margin-left:5%">
+            <div class="col-60">
+                <h2 class="text-warning">About Us</h2>
+                <h4 style="color:white">Amit Shriram Patil</h4>
+                <p>
+                   Information Technology Engineering Student with interest in an Android and Web Development.  
+					I have participated and won third prize for the Indias first MOMI Hackathon  At Delhi, Maximizing utilization of charging stations - Developing an small model of Android application - "Charge My Vehicles" 
+					I developed android application 'NMU Classroom' in Apr2020. 
+                </p>
+            </div>
+            <div class="col-40 text-center">
+                 <img class= "slideanim" src="imgs/user.jpg" alt="" style="border-radius: 50%; width:30%;display: block; margin-left: auto;margin-top :3%; margin-right: auto;">
+	
+            </div>
+        </section>
+		<div   style="text-align:center; display: block; margin-left: auto; margin-top :5%; margin-right: auto;"> 	
+		<h1 style="color:white; text-align:center;"> My Skills</h1>
+		<h4 style="color:white; margin-top :1%;text-align:center;">Languages</h4>
+		<img class="slideanim" src="imgs/jav.png" width="50" height="50"  alt="" style="margin-left:2%; margin-top:1%">
+		<img class="slideanim" src="imgs/pyth.png" width="100" height="50"  alt="" style="margin-left:2%; margin-top:1%">
+		<img class="slideanim" src="imgs/js.png" width="50" height="50"  alt="" style="margin-left:2%; margin-top:1%">
+		<img class="slideanim" src="imgs/php.png" width="50" height="50"  alt="" style="margin-left:2%; margin-top:1%">
+		<img class="slideanim" src="imgs/html.png" width="50" height="50"  alt="" style="margin-left:2%; margin-top:1%">
+
+		<h4 style="color:white; margin-top :1%;text-align:center;">Technology</h4>
+		<img class="slideanim" src="imgs/boot.png" width="50" height="50"  alt="" style="margin-left:2%; margin-top:1%">
+		<img class="slideanim" src="imgs/android.png" width="50" height="50"  alt="" style="margin-left:2%; margin-top:1%">
+		<img class="slideanim" src="imgs/flutter.png" width="50" height="50"  alt="" style="margin-left:2%; margin-top:1%">
+
+		<h4 style="color:white; margin-top :1%;text-align:center;">Database</h4>
+		<img class="slideanim" src="imgs/fire.png" width="50" height="50"  alt="" style="margin-left:2%; margin-top:1%">
+		<img class="slideanim" src="imgs/sql.png" width="50" height="50"  alt="" style="margin-left:2%; margin-top:1%">
+		</div>
+		<hr class="new4">
+		
+        <section class="row bg-black">
+            <div class="col-40 text-center">
+               <img class= "slideanim" src="imgs/college.png" alt="" style="border-radius: 30%; width:30%;display: block; margin-left: auto;margin-top :15%; margin-right: auto;">
+	
+            </div>
+            <div class="col-60">
+                <h2 class="text-warning">My Education</h2>
+				<div>
+                <h4><strong>College :</strong>  SSBT College of Engineering and Technology Bambhori, Jalgaon </h4>
+                <h5>Bachelor of Engineering in Information Technology.</h5>
+				<h6>2019 - Present</h6>
+				</div>
+				<hr class="new3">
+				<div>
+                <h4><strong>College :</strong>  Govenment Pollytechnic, Jalgaon </h4>
+                <h5>Diploma in Information Technology.</h5>
+				<h6>2016 - 2019</h6>
+				</div>
+            </div>
+			
+        </section>
+		
+		<hr class="new4">
+
+		
+		
+        <section class="text-center">
+            <h2 class="text-warning	">My Activities</h2>
+            <h4 style="margin-bottom:3%; color:white;">Events</h4>
+            <div style="text-align:center; margin-left:25%;" class="row slideanim">
+                <div  class="col-33">
+                    <i  class="fa fa-university"></i>
+                    <h4 style="margin-top:2%;">TechnoFest-2k18</h4>
+                    <p>Co-ordinator of the event 'TechnoFest-2k18'</p>
+                </div>
+        
+                <div class="col-33">
+                    <i class="fa fa-university"></i>
+                    <h4 style="margin-top:2%;">Crakathon</h4>
+                    <p>Main Organizer & Co-ordinator of the event 'Code 2k20'</p>
+                </div>
+            </div>
+            <br><br>
+			<h4 style="margin-bottom:4%; color:white;">Competitions</h4>
+            <div style="text-align:center; margin-left:25%" class="row slideanim">
+                <div class="col-33">
+                    <img  style=" border-radius: 25%;" src="imgs/loho.png" width="90" height="90"  alt="" > 
+                    <h4 style="margin-top:2%;">Smart India Hackethon-20</h4>
+                    <p>Participated in Smart India Hackathon 2020.</p>
+                </div>
+               <div class="col-33">
+                    <i  class="fa fa-university"></i>
+                    <h4 style="margin-top:2%;">Indias Largest MOMI Hackathon 2k19</h4>
+                    <p>Participated and Won Third prize in Indias Largest MOMI Hackathon 2k19  .</p>
+                </div>
+                
+            </div>
+        </section>
+		<hr class="new4">
+		
+		 <h2 style="text-align:center; margin-top:3%;" class="text-warning">My Works</h2>
+		 <div style="text-align:center; margin-bottom:3%;">
+		 <button type="button" id="btn" class="btn btn-outline-success" onclick="toggleVisibility('App1');">Android Projects</button>
+			<button type="button" class="btn btn-outline-info" onclick="toggleVisibility('App2')">Flutter-OpenSource</button>
+			</div>
+<section class="slideanim">	
+<div id="App1">	 
+		<div style="margin-right:5%" class="card-columns" >
+		  <div style="background-color:black" class="card border-danger mb-3">
+			<img style="width:30%; margin-top:2%;text-align:center;" src="imgs/iconfinal.png" class="card-img-top" alt="...">
+			<div class="card-body">
+			  <h5 class="text-danger">SPPU QBank</h5>
+			  <p class="text-white">Jan 2019 â€“ Apr 2019Project description SPPU QBank - All Theory Question Papers of Engg.Get this app for referring all the question papers (SPPU B.E. Engineering) ðŸ“–
+		This app provides all the theory question papers (SPPU B.E. Engineering) from F.E to B.E.
+		Also, provides Online MCQ Test Practise for F.E and S.E. students.</p>
+		<a href="https://play.google.com/store/apps/details?id=com.unveil.sppuqbank&hl=en_IN" class="btn btn-danger">View Project</a>
+			</div>
+		  </div>
+		   <div style="background-color:black" class="card border-warning mb-3">
+			<img style="width:65%; margin-top:2%;text-align:center;" src="imgs/shop.jpg" class="card-img-top" alt="...">
+	
+			<div class="card-body">
+			  <h5 class="text-warning">MobileShopping-Application</h5>
+			  <p class="text-white">Jan 2018 – Mar 2018
+
+Project descriptionThis is app for Mobile shopping , which help you for purches mobile and its assesories in best price .
+Its help buyer to compare many other websites with there best deals</p>
+		<a href="https://github.com/patilamit1999/MobileShpping-Application" class="btn btn-warning">View Project</a>
+			</div>
+		
+		  </div>
+		   <div style="background-color:black;margin-right:5%" class="card border-info mb-3">
+			<img style="width:53%; margin-top:2%;text-align:center;" src="imgs/test.jpg" class="card-img-top" alt="...">
+			
+			<div class="card-body">
+			  <h5 class="text-info">OnlineTest-Application</h5>
+			  <p class="text-white">Jan 2019 – Mar 2019
+					Project descriptionThis application for online test practices .
+					All subject McQ exam are available for sppu.
+					and this module is also implement in prerequisite test and aptitude test.</p>
+		<a href="https://github.com/patilamit1999/OnlineTest-Application" class="btn btn-info">View Project</a>
+			</div>
+			
+		  </div>
+		</div>
+    
+	<div style="margin-top:1%;margin-right:5%" class="card-columns" >
+		
+		  <div style="background-color:black;margin-right:5%" class="card border-danger mb-3">
+			<img style="width:53%; margin-top:2%;text-align:center;" src="imgs/class.png" class="card-img-top" alt="...">
+			
+			<div class="card-body">
+			  <h5 style="color:Chocolate;">NMU-Classroom</h5>
+			  <p class="text-white">
+					This application for online tutorial or any type of study material provided .
+					Students can reffer that study material any time. it is very tedius job for searching notes for perticular subject 
+					and visit diffrent websites . in this application all notes are available as per subject and branch wise.</p>
+		<a href="https://github.com/patilamit1999/OnlineTest-Application" class="btn btn-danger">View Project</a>
+			</div>
+			
+		  </div>
+		  <div style="background-color:black;margin-right:5%" class="card border-warning mb-3">
+			<img style="width:53%; margin-top:2%;text-align:center;" src="imgs/Flash.png" class="card-img-top" alt="...">
+			
+			<div class="card-body">
+			  <h5 style="color:Chocolate;">Flash-Classroom</h5>
+			  <p class="text-white">
+					This application Flash classrooms is absolutely free service which provides video conferencing, virtual classrooms ,
+					assignments submission, mock tests and much more.</p>
+		<a href="https://play.google.com/store/apps/details?id=com.unveils.mobilelearning" class="btn btn-warning">View Project</a>
+			</div>
+			
+		  </div>
+		 </div>
+		 
+		 </div>
+		 <div style="margin-top:1%;margin-right:5%" class="card-columns" id="App2">
+		  <div style="background-color:black" class="card border-primary mb-3">
+			<img style="width:60%; margin-top:2%;text-align:center;" src="imgs/animated.gif" class="card-img-top" alt="...">
+			<div class="card-body">
+			  <h5 class="text-primary">Flutter-Material_AlertDialog</h5>
+			  <p class="text-white"> Flutter package  to implement *animated*, 🥰 *Attractive*, 🎨*stylish* Material Dialog in Flutter easily..</p>
+		<a href="https://github.com/patilamit1999/Flutter-MaterialAlertDialog" class="btn btn-primary">View Project</a>
+			</div>
+		
+		  </div>
+		   <div style="background-color:black" class="card border-success mb-3">
+			<img style="width:50%; height:30%; margin-top:2%;text-align:center;" src="imgs/healthcare.gif" class="card-img-top" alt="...">
+			
+			<div class="card-body">
+			  <h5 class="text-success">Flutter-FirebasePhoneAuth</h5>
+			  <p class="text-white">Flutter package to Easy Implimaintaion of Firebase Phone Authentication and also provide *animated*, 🥰 *Attractive*, 🎨*stylish* Login Page for phone authentication.</p>
+		<a href="https://github.com/patilamit1999/Flutter-FirebasePhoneAuth" class="btn btn-success">View Project</a>
+			</div>
+		
+		  </div>
+		  <div style="background-color:black;margin-right:5%" class="card border-danger mb-3">
+			<img style="width:53%; margin-top:2%;text-align:center;" src="imgs/main.jpg" class="card-img-top" alt="...">
+			
+			<div class="card-body">
+			  <h5 style="color:Chocolate;">Flutter-Card_gridView</h5>
+			  <p class="text-white">
+					Flutter package for easy implimentation of card lauout and also provide it a grid view and build interactive ui with material card view.</p>
+		<a href="https://github.com/patilamit1999/custom_cardgridview" class="btn btn-danger">View Project</a>
+			</div>
+			
+		  </div>
+		 </div>
+		 </section>
+		 </div>
+
+
+    <footer class="text-center">
+        <p>Designed by : Amit Shriram Patil .</p>
+    </footer>
+</body>
+</html>
